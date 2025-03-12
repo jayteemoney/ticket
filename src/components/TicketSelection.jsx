@@ -28,9 +28,9 @@ const TicketSelection = ({ formData, setFormData }) => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#0B151E] text-white p-6 font-bold font-serif">
+    <div className="min-h-screen flex items-center justify-center bg-[#112d27] text-white p-6 font-bold font-serif">
       {/* Ticket Selection Container */}
-      <div className="bg-[#11212D] p-6 rounded-xl shadow-lg w-full max-w-[450px]">
+      <div className="bg-[#061814] p-6 rounded-xl shadow-lg w-full max-w-[450px]">
         
         {/* Header Section */}
         <div className="flex justify-between items-center pb-3 border-b-4 border-gray-600">
@@ -39,7 +39,7 @@ const TicketSelection = ({ formData, setFormData }) => {
         </div>
 
         {/* Event Details */}
-        <div className="bg-[#1A2A38] p-4 mt-4 rounded-lg border border-gray-700">
+        <div className="bg-[#112d27] p-4 mt-4 rounded-lg border border-gray-700">
           <h2 className="text-2xl font-bold text-center text-gray-200">Techember Fest 25</h2>
           <p className="text-sm text-gray-400 text-center mt-2">
             Join us for an unforgettable experience at Techember Fest 25! Secure your spot now.
