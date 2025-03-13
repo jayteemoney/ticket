@@ -33,7 +33,7 @@ const TicketSelection = ({ formData, setFormData }) => {
       <div className="bg-[#061814] p-6 rounded-xl shadow-lg w-full max-w-[400px]">
         
         {/* Header Section */}
-        <div className="flex justify-between items-center pb-3 border-b-4 border-gray-600">
+        <div className="flex justify-between items-center pb-3 border-b-4 border-green-900">
           <h2 className="text-lg font-semibold">Ticket Selection</h2>
           <span className="text-sm text-gray-400">Step 1/3</span>
         </div>
