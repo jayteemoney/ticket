@@ -77,17 +77,17 @@ const AttendeeDetails = ({ formData, setFormData }) => {
         {/* Header Section */}
         <div className="flex justify-between items-center pb-3 border-b-4 border-green-900">
           <h2 className="text-lg font-semibold">Attendee Details</h2>
-          <span className="text-sm text-gray-400">Step 2/3</span>
+          <span className="text-sm text-gray-100">Step 2/3</span>
         </div>
 
         {/* Profile Image Upload Section */}
         <div className="mt-4 text-center">
-          <h3 className="text-sm text-gray-400 mb-2">Upload Profile Photo</h3>
+          <h3 className="text-sm text-gray-100 mb-2">Upload Profile Photo</h3>
           <label className="flex flex-col items-center justify-center w-full h-28  rounded-lg bg-[#112d27] cursor-pointer">
             {profileImage ? (
               <img src={profileImage} alt="Uploaded" className="w-full h-full object-cover rounded-lg" />
             ) : (
-              <div className="text-gray-400 text-sm">
+              <div className="text-gray-100 text-sm">
                 <p>📷 Drag & drop or click to upload</p>
               </div>
             )}
@@ -98,7 +98,7 @@ const AttendeeDetails = ({ formData, setFormData }) => {
         {/* Form Section */}
         <form onSubmit={handleSubmit} className="mt-6">
           {/* Full Name Input */}
-          <label className="block text-sm text-gray-400">Enter Your Name</label>
+          <label className="block text-sm text-gray-100">Enter Your Name</label>
           <input
             type="text"
             className="w-full p-3 mt-1 rounded-lg bg-[#112d27] text-gray-300"
@@ -108,9 +108,9 @@ const AttendeeDetails = ({ formData, setFormData }) => {
           {errors.fullName && <p className="text-red-500 text-xs mt-1">{errors.fullName}</p>}
 
           {/* Email Input */}
-          <label className="block text-sm text-gray-400 mt-4">Enter Your Email *</label>
+          <label className="block text-sm text-gray-100 mt-4">Enter Your Email *</label>
           <div className="relative">
-            <span className="absolute left-3 top-3 text-gray-400">📧</span>
+            <span className="absolute left-3 top-3 text-gray-100">📧</span>
             <input
               type="email"
               className="w-full pl-8 p-3 rounded-lg bg-[#112d27] text-gray-300"
@@ -121,7 +121,7 @@ const AttendeeDetails = ({ formData, setFormData }) => {
           {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
 
           {/* Special Requests Textarea */}
-          <label className="block text-sm text-gray-400 mt-4">Special Request?</label>
+          <label className="block text-sm text-gray-100 mt-4">Special Request?</label>
           <textarea
             className="w-full p-3 mt-1 rounded-lg bg-[#112d27] text-gray-300"
             rows="3"
