@@ -83,14 +83,14 @@ const TicketSelection = ({ formData, setFormData }) => {
         <div className="flex justify-between gap-3 mt-6">
           <button
             onClick={handleCancel}
-            className="w-1/3 bg-gray-600 text-gray-200 py-2 rounded-lg hover:bg-gray-700 transition cursor-pointer"
+            className="w-1/3 bg-green-900 text-gray-200 py-2 rounded-lg hover:bg-[#112d27] transition cursor-pointer"
           >
             Cancel
           </button>
           <button
             onClick={handleNext}
             className={`w-2/3 py-2 rounded-lg transition ${
-              selectedTicket ? "bg-blue-500 hover:bg-blue-600 cursor-pointer" : "bg-gray-500 cursor-not-allowed"
+              selectedTicket ? "bg-green-900 hover:bg-[#112d27] cursor-pointer" : "bg-[#112d27] cursor-not-allowed"
             }`}
             disabled={!selectedTicket}
           >
