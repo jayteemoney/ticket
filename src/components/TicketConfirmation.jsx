@@ -44,8 +44,8 @@ const TicketConfirmation = ({ formData }) => {
         </div>
 
         {/* Attendee Info */}
-        <div className="mt-3 bg-gray-800 p-3 rounded-lg border border-gray-700">
-          <h3 className="text-xs text-gray-400">Attendee Information</h3>
+        <div className="mt-3 bg-[#112d27] p-3 rounded-lg ">
+          <h3 className="text-xs text-gray-100">Attendee Information</h3>
           <p className="text-white text-sm"><strong>Name:</strong> {formData?.fullName || "N/A"}</p>
           <p className="text-white text-sm"><strong>Email:</strong> {formData?.email || "N/A"}</p>
           {formData?.specialRequest && (
