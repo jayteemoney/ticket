@@ -75,7 +75,7 @@ const AttendeeDetails = ({ formData, setFormData }) => {
       {/* Main Form Card */}
       <div className="bg-[#061814]  p-6 rounded-xl shadow-lg w-full max-w-[450px] max-h-screen">
         {/* Header Section */}
-        <div className="flex justify-between items-center pb-3 border-b-4 border-gray-600">
+        <div className="flex justify-between items-center pb-3 border-b-4 border-green-900">
           <h2 className="text-lg font-semibold">Attendee Details</h2>
           <span className="text-sm text-gray-400">Step 2/3</span>
         </div>
@@ -83,7 +83,7 @@ const AttendeeDetails = ({ formData, setFormData }) => {
         {/* Profile Image Upload Section */}
         <div className="mt-4 text-center">
           <h3 className="text-sm text-gray-400 mb-2">Upload Profile Photo</h3>
-          <label className="flex flex-col items-center justify-center w-full h-28 border border-gray-600 rounded-lg bg-gray-800 cursor-pointer">
+          <label className="flex flex-col items-center justify-center w-full h-28  rounded-lg bg-[#112d27] cursor-pointer">
             {profileImage ? (
               <img src={profileImage} alt="Uploaded" className="w-full h-full object-cover rounded-lg" />
             ) : (
@@ -101,7 +101,7 @@ const AttendeeDetails = ({ formData, setFormData }) => {
           <label className="block text-sm text-gray-400">Enter Your Name</label>
           <input
             type="text"
-            className="w-full p-3 mt-1 rounded-lg bg-gray-800 border border-gray-600 text-gray-300"
+            className="w-full p-3 mt-1 rounded-lg bg-[#112d27] text-gray-300"
             value={fullName}
             onChange={(e) => setFullName(e.target.value)}
           />
@@ -113,7 +113,7 @@ const AttendeeDetails = ({ formData, setFormData }) => {
             <span className="absolute left-3 top-3 text-gray-400">📧</span>
             <input
               type="email"
-              className="w-full pl-8 p-3 rounded-lg bg-gray-800 border border-gray-600 text-gray-300"
+              className="w-full pl-8 p-3 rounded-lg bg-[#112d27] text-gray-300"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -123,7 +123,7 @@ const AttendeeDetails = ({ formData, setFormData }) => {
           {/* Special Requests Textarea */}
           <label className="block text-sm text-gray-400 mt-4">Special Request?</label>
           <textarea
-            className="w-full p-3 mt-1 rounded-lg bg-gray-800 border border-gray-600 text-gray-300"
+            className="w-full p-3 mt-1 rounded-lg bg-[#112d27] text-gray-300"
             rows="3"
             value={specialRequest}
             onChange={(e) => setSpecialRequest(e.target.value)}
