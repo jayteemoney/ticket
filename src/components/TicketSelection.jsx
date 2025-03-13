@@ -28,7 +28,7 @@ const TicketSelection = ({ formData, setFormData }) => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#112d27] text-white p-6 font-bold font-serif">
+    <div className="min-h-screen flex items-center justify-center bg-[#112d27] text-white p-6 font-bold">
       {/* Ticket Selection Container */}
       <div className="bg-[#061814] p-6 rounded-xl shadow-lg w-full max-w-[450px]">
         
