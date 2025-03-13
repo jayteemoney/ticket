@@ -71,9 +71,9 @@ const AttendeeDetails = ({ formData, setFormData }) => {
   };
 
   return (
-    <div className="h-screen w-screen flex items-center justify-center bg-[#0B151E] text-white p-6 overflow-hidden font-bold font-serif">
+    <div className="h-screen w-screen flex items-center justify-center bg-[#112d27] text-white p-6 overflow-hidden font-bold font-serif">
       {/* Main Form Card */}
-      <div className="bg-[#11212D] p-6 rounded-xl shadow-lg w-full max-w-[450px] max-h-screen">
+      <div className="bg-[#061814]  p-6 rounded-xl shadow-lg w-full max-w-[450px] max-h-screen">
         {/* Header Section */}
         <div className="flex justify-between items-center pb-3 border-b-4 border-gray-600">
           <h2 className="text-lg font-semibold">Attendee Details</h2>

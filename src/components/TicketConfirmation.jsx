@@ -5,9 +5,9 @@ const TicketConfirmation = ({ formData }) => {
   const navigate = useNavigate();
 
   return (
-    <div className="h-screen flex items-center justify-center bg-[#0B151E] text-white p-6 overflow-hidde font-bold font-serif">
+    <div className="h-screen flex items-center justify-center bg-[#112d27] text-white p-6 overflow-hidde font-bold font-serif">
       {/* Main Card */}
-      <div className="bg-[#11212D] p-6 rounded-xl shadow-lg w-full max-w-[450px] h-auto">
+      <div className="bg-[#061814] p-6 rounded-xl shadow-lg w-full max-w-[450px] h-auto">
         
         {/* Header Section */}
         <div className="flex justify-between items-center pb-3 border-b-4 border-gray-600">
