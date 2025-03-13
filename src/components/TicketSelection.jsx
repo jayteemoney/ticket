@@ -39,7 +39,7 @@ const TicketSelection = ({ formData, setFormData }) => {
         </div>
 
         {/* Event Details */}
-        <div className="bg-[#112d27] p-4 mt-4 rounded-lg border border-gray-700">
+        <div className="bg-[#112d27] p-4 mt-4 rounded-lg">
           <h2 className="text-2xl font-bold text-center text-gray-200">Techember Fest 25</h2>
           <p className="text-sm text-gray-400 text-center mt-2">
             Join us for an unforgettable experience at Techember Fest 25! Secure your spot now.
@@ -54,8 +54,8 @@ const TicketSelection = ({ formData, setFormData }) => {
           {["Free", "VIP", "VIP Plus"].map((ticket) => (
             <button
               key={ticket}
-              className={`p-3 rounded-lg border cursor-pointer ${
-                selectedTicket === ticket ? "border-blue-500 bg-blue-900" : "border-gray-600 bg-gray-800"
+              className={`p-3 rounded-lg  cursor-pointer ${
+                selectedTicket === ticket ? " bg-green-900" : " bg-[#112d27]"
               }`}
               onClick={() => handleTicketSelection(ticket)}
             >
@@ -70,7 +70,7 @@ const TicketSelection = ({ formData, setFormData }) => {
         {/* Ticket Quantity Selection */}
         <h3 className="mt-6 text-sm text-gray-400">Number of Tickets</h3>
         <select
-          className="w-full p-3 mt-2 rounded-lg bg-gray-800 border border-gray-600 text-gray-300"
+          className="w-full p-3 mt-2 rounded-lg bg-[#112d27] text-gray-300"
           value={ticketCount}
           onChange={(e) => setTicketCount(Number(e.target.value))}
         >
