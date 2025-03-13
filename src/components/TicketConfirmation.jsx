@@ -16,10 +16,10 @@ const TicketConfirmation = ({ formData }) => {
         </div>
 
         {/* Ticket Info Section */}
-        <div className="mt-4 text-center bg-gray-800 p-3 rounded-lg border border-gray-700">
+        <div className="mt-4 text-center bg-[#112d27] p-3 rounded-lg border ">
           <h3 className="text-lg font-bold text-white">Techember Fest 25</h3>
-          <p className="text-gray-400 text-xs mt-1">📍 Jos, Nigeria</p>
-          <p className="text-gray-400 text-xs">📅 March 15, 2025 | 7:00 PM</p>
+          <p className="text-gray-100 text-xs mt-1">📍 Jos, Nigeria</p>
+          <p className="text-gray-100 text-xs">📅 March 15, 2025 | 7:00 PM</p>
         </div>
         
         {/* Profile Image (If Uploaded) */}
