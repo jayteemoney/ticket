@@ -16,7 +16,7 @@ const TicketConfirmation = ({ formData }) => {
         </div>
 
         {/* Ticket Info Section */}
-        <div className="mt-4 text-center bg-[#112d27] p-3 rounded-lg border ">
+        <div className="mt-4 text-center bg-[#112d27] p-3 rounded-lg ">
           <h3 className="text-lg font-bold text-white">Techember Fest 25</h3>
           <p className="text-gray-100 text-xs mt-1">📍 Jos, Nigeria</p>
           <p className="text-gray-100 text-xs">📅 March 15, 2025 | 7:00 PM</p>
@@ -25,20 +25,20 @@ const TicketConfirmation = ({ formData }) => {
         {/* Profile Image (If Uploaded) */}
         {formData?.profileImage && (
           <div className="mt-3 text-center">
-            <h3 className="text-xs text-gray-400">Profile Photo</h3>
+            <h3 className="text-xs text-gray-100">Profile Photo</h3>
             <img
               src={formData.profileImage}
               alt="Profile"
-              className="w-20 h-20 mx-auto mt-2 rounded-full border border-gray-600"
+              className="w-20 h-20 mx-auto mt-2 rounded-full"
             />
           </div>
         )}
 
         {/* Ticket Details */}
-        <div className="mt-3 bg-gray-800 p-3 rounded-lg border border-gray-700">
-          <h3 className="text-xs text-gray-400">Ticket Type</h3>
+        <div className="mt-3 bg-[#112d27] p-3 rounded-lg ">
+          <h3 className="text-xs text-gray-100">Ticket Type</h3>
           <p className="text-white text-sm font-semibold">{formData?.ticketType || "N/A"}</p>
-          <p className="text-gray-400 text-xs">
+          <p className="text-gray-100 text-xs">
             {formData?.ticketType === "VIP" ? "$150" : "Free"}
           </p>
         </div>
