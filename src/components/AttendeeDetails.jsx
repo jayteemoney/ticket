@@ -140,7 +140,7 @@ const AttendeeDetails = ({ formData, setFormData }) => {
             </button>
             <button
               type="submit"
-              className="w-2/3 bg-blue-500 hover:bg-blue-600 py-2 rounded-lg transition cursor-pointer"
+              className="w-2/3 bg-[#112d27] hover:bg-[#112d27e0] py-2 rounded-lg transition cursor-pointer"
             >
               Get My Free Ticket
             </button>
