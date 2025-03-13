@@ -134,13 +134,13 @@ const AttendeeDetails = ({ formData, setFormData }) => {
             <button
               type="button"
               onClick={() => navigate("/")}
-              className="w-1/3 bg-gray-600 text-gray-200 py-2 rounded-lg hover:bg-gray-700 transition cursor-pointer"
+              className="w-1/3 bg-[#112d27] text-gray-200 py-2 rounded-lg hover:bg-green-900 transition cursor-pointer"
             >
               Back
             </button>
             <button
               type="submit"
-              className="w-2/3 bg-[#112d27] hover:bg-[#112d27e0] py-2 rounded-lg transition cursor-pointer"
+              className="w-2/3 bg-[#112d27] hover:bg-green-900 py-2 rounded-lg transition cursor-pointer"
             >
               Get My Free Ticket
             </button>
