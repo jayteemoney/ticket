@@ -10,9 +10,9 @@ const TicketConfirmation = ({ formData }) => {
       <div className="bg-[#061814] p-6 rounded-xl shadow-lg w-full max-w-[450px] h-auto">
         
         {/* Header Section */}
-        <div className="flex justify-between items-center pb-3 border-b-4 border-gray-600">
+        <div className="flex justify-between items-center pb-3 border-b-4 border-green-900">
           <h2 className="text-lg font-semibold">Ticket Successfully Booked!</h2>
-          <span className="text-sm text-gray-400">Step 3/3</span>
+          <span className="text-sm text-gray-100">Step 3/3</span>
         </div>
 
         {/* Ticket Info Section */}
