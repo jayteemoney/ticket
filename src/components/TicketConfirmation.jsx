@@ -58,13 +58,13 @@ const TicketConfirmation = ({ formData }) => {
           <button
             type="button"
             onClick={() => navigate("/")}
-            className="w-1/2 bg-gray-600 text-gray-200 py-2 rounded-lg hover:bg-gray-700 transition cursor-pointer"
+            className="w-1/2 bg-green-900 text-gray-200 py-2 rounded-lg hover:bg-[#112d27] transition cursor-pointer"
           >
             Book Another Ticket
           </button>
           <button
             type="button"
-            className="w-1/2 bg-blue-500 hover:bg-blue-600 py-2 rounded-lg transition cursor-pointer"
+            className="w-1/2 bg-green-900 hover:bg-[#112d27] py-2 rounded-lg transition cursor-pointer"
           >
             Download Ticket
           </button>
