@@ -8,8 +8,12 @@ const AttendeeDetails = ({ formData, setFormData }) => {
   // State for form inputs with default values from formData (if available)
   const [fullName, setFullName] = useState(formData.fullName || "");
   const [email, setEmail] = useState(formData.email || "");
-  const [specialRequest, setSpecialRequest] = useState(formData.specialRequest || "");
-  const [profileImage, setProfileImage] = useState(formData.profileImage || null);
+  const [specialRequest, setSpecialRequest] = useState(
+    formData.specialRequest || ""
+  );
+  const [profileImage, setProfileImage] = useState(
+    formData.profileImage || null
+  );
   const [errors, setErrors] = useState({});
 
   /**
@@ -25,10 +29,13 @@ const AttendeeDetails = ({ formData, setFormData }) => {
     uploadData.append("upload_preset", "dev_jaytee");
 
     try {
-      const res = await fetch("https://api.cloudinary.com/v1_1/dalaunt4j/image/upload", {
-        method: "POST",
-        body: uploadData,
-      });
+      const res = await fetch(
+        "https://api.cloudinary.com/v1_1/dalaunt4j/image/upload",
+        {
+          method: "POST",
+          body: uploadData,
+        }
+      );
       const data = await res.json();
       setProfileImage(data.secure_url);
     } catch (error) {
@@ -58,7 +65,7 @@ const AttendeeDetails = ({ formData, setFormData }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const validationErrors = validateForm();
-    
+
     // If validation fails, set errors and stop submission
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
@@ -85,13 +92,22 @@ const AttendeeDetails = ({ formData, setFormData }) => {
           <h3 className="text-sm text-gray-100 mb-2">Upload Profile Photo</h3>
           <label className="flex flex-col items-center justify-center w-full h-28  rounded-lg bg-[#112d27] cursor-pointer">
             {profileImage ? (
-              <img src={profileImage} alt="Uploaded" className="w-full h-full object-cover rounded-lg" />
+              <img
+                src={profileImage}
+                alt="Uploaded"
+                className="w-full h-full object-cover rounded-lg"
+              />
             ) : (
               <div className="text-gray-100 text-sm">
-                <p>📷 Drag & drop or click to upload</p>
+                <p> Drag & drop or click to upload</p>
               </div>
             )}
-            <input type="file" className="hidden" accept="image/*" onChange={handleImageUpload} />
+            <input
+              type="file"
+              className="hidden"
+              accept="image/*"
+              onChange={handleImageUpload}
+            />
           </label>
         </div>
 
@@ -105,10 +121,14 @@ const AttendeeDetails = ({ formData, setFormData }) => {
             value={fullName}
             onChange={(e) => setFullName(e.target.value)}
           />
-          {errors.fullName && <p className="text-red-500 text-xs mt-1">{errors.fullName}</p>}
+          {errors.fullName && (
+            <p className="text-red-500 text-xs mt-1">{errors.fullName}</p>
+          )}
 
           {/* Email Input */}
-          <label className="block text-sm text-gray-100 mt-4">Enter Your Email *</label>
+          <label className="block text-sm text-gray-100 mt-4">
+            Enter Your Email *
+          </label>
           <div className="relative">
             <span className="absolute left-3 top-3 text-gray-100">📧</span>
             <input
@@ -118,10 +138,14 @@ const AttendeeDetails = ({ formData, setFormData }) => {
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
-          {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
+          {errors.email && (
+            <p className="text-red-500 text-xs mt-1">{errors.email}</p>
+          )}
 
           {/* Special Requests Textarea */}
-          <label className="block text-sm text-gray-100 mt-4">Special Request?</label>
+          <label className="block text-sm text-gray-100 mt-4">
+            Special Request?
+          </label>
           <textarea
             className="w-full p-3 mt-1 rounded-lg bg-[#112d27] text-gray-300"
             rows="3"
